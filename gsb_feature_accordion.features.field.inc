@@ -59,7 +59,7 @@ function gsb_feature_accordion_field_default_fields() {
       ),
       'entity_type' => 'field_collection_item',
       'field_name' => 'field_description',
-      'label' => 'Description',
+      'label' => 'Accordion Body',
       'required' => 0,
       'settings' => array(
         'linkit' => array(
@@ -133,7 +133,7 @@ function gsb_feature_accordion_field_default_fields() {
       ),
       'entity_type' => 'field_collection_item',
       'field_name' => 'field_header',
-      'label' => 'Header',
+      'label' => 'Accordion Header',
       'required' => 1,
       'settings' => array(
         'linkit' => array(
@@ -218,8 +218,8 @@ function gsb_feature_accordion_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Accordion Item');
-  t('Description');
-  t('Header');
+  t('Accordion Body');
+  t('Accordion Header');
 
   return $fields;
 }
