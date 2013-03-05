@@ -73,8 +73,8 @@ Heading H3=h3
 Heading H4=h4
 Heading H5=h5
 Heading H6=h6
-Acc-Title=p.acc-title
-Acc-Body=p.acc-body',
+Accordion Header=p.acc-title
+Accordion Body=p.acc-body',
     ),
   );
 
