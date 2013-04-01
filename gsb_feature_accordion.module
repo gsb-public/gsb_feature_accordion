@@ -15,8 +15,8 @@ include_once 'gsb_feature_accordion.features.inc';
  */
 
 function gsb_feature_accordion_entity_info_alter(&$entity_info) {
-  $entity_info['fieldable_panels_pane']['bundles']['gsb_accordion'] = array(
-    'label' => t('Add GSB Accordion'),
+  $entity_info['fieldable_panels_pane']['bundles']['accordion'] = array(
+    'label' => t('Add Accordion'),
     'pane category' => t('GSB panes'),
     'pane top level' => TRUE, // set to true to make this show as a top level icon
     'pane icon' => drupal_get_path('module', 'panopoly_widgets') . '/images/icon_content_list.png',
@@ -24,7 +24,7 @@ function gsb_feature_accordion_entity_info_alter(&$entity_info) {
       'path' => 'admin/structure/fieldable-panels-panes/manage/%fieldable_panels_panes_type',
       'bundle argument' => 10,
       // Note that this has all _ replaced with - from the bundle name.
-      'real path' => 'admin/structure/fieldable-panels-panes/manage/gsb-accordion',
+      'real path' => 'admin/structure/fieldable-panels-panes/manage/accordion',
       'access arguments' => array('administer fieldable panels panes'),
     ),
   );

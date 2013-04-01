@@ -10,14 +10,14 @@
 function gsb_feature_accordion_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'field_collection_item-field_accordion_item-field_description'.
-  $fields['field_collection_item-field_accordion_item-field_description'] = array(
+  // Exported field: 'field_collection_item-field_accordion_item-field_body'.
+  $fields['field_collection_item-field_accordion_item-field_body'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_description',
+      'field_name' => 'field_body',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -44,11 +44,11 @@ function gsb_feature_accordion_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'above',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '1',
+          'weight' => 3,
         ),
         'ical' => array(
           'label' => 'above',
@@ -56,11 +56,17 @@ function gsb_feature_accordion_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
       ),
       'entity_type' => 'field_collection_item',
-      'field_name' => 'field_description',
-      'label' => 'Accordion Body',
-      'required' => 0,
+      'field_name' => 'field_body',
+      'label' => 'Body',
+      'required' => 1,
       'settings' => array(
         'linkit' => array(
           'enable' => 0,
@@ -73,23 +79,27 @@ function gsb_feature_accordion_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
+          'maxlength_js' => '',
+          'maxlength_js_enforce' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_truncate_html' => 0,
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '3',
+        'weight' => '1',
       ),
       'workbench_access_field' => 0,
     ),
   );
 
-  // Exported field: 'field_collection_item-field_accordion_item-field_header'.
-  $fields['field_collection_item-field_accordion_item-field_header'] = array(
+  // Exported field: 'field_collection_item-field_accordion_item-field_title'.
+  $fields['field_collection_item-field_accordion_item-field_title'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_header',
+      'field_name' => 'field_title',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -118,11 +128,11 @@ function gsb_feature_accordion_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'above',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '0',
+          'weight' => 2,
         ),
         'ical' => array(
           'label' => 'above',
@@ -130,10 +140,16 @@ function gsb_feature_accordion_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
       ),
       'entity_type' => 'field_collection_item',
-      'field_name' => 'field_header',
-      'label' => 'Accordion Header',
+      'field_name' => 'field_title',
+      'label' => 'Title',
       'required' => 1,
       'settings' => array(
         'linkit' => array(
@@ -147,10 +163,12 @@ function gsb_feature_accordion_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
+          'maxlength_js' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '1',
+        'weight' => '0',
       ),
       'workbench_access_field' => 0,
     ),
@@ -218,8 +236,8 @@ function gsb_feature_accordion_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Accordion Item');
-  t('Accordion Body');
-  t('Accordion Header');
+  t('Body');
+  t('Title');
 
   return $fields;
 }
