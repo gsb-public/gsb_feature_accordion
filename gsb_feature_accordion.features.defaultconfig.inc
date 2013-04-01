@@ -168,8 +168,8 @@ function gsb_feature_accordion_defaultconfig_field_default_fields() {
     ),
   );
 
-  // Exported field: 'fieldable_panels_pane-gsb_accordion-field_accordion_item'.
-  $fields['fieldable_panels_pane-gsb_accordion-field_accordion_item'] = array(
+  // Exported field: 'fieldable_panels_pane-accordion-field_accordion_item'.
+  $fields['fieldable_panels_pane-accordion-field_accordion_item'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -188,7 +188,7 @@ function gsb_feature_accordion_defaultconfig_field_default_fields() {
       'type' => 'field_collection',
     ),
     'field_instance' => array(
-      'bundle' => 'gsb_accordion',
+      'bundle' => 'accordion',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -245,7 +245,7 @@ function gsb_feature_accordion_defaultconfig_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_fieldable_panels_pane__gsb_accordion';
+  $strongarm->name = 'field_bundle_settings_fieldable_panels_pane__accordion';
   $strongarm->value = array(
     'view_modes' => array(
       'ical' => array(
@@ -274,7 +274,7 @@ function gsb_feature_accordion_defaultconfig_strongarm() {
       ),
     ),
   );
-  $export['field_bundle_settings_fieldable_panels_pane__gsb_accordion'] = $strongarm;
+  $export['field_bundle_settings_fieldable_panels_pane__accordion'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

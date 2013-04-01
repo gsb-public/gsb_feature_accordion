@@ -13,7 +13,7 @@ function gsb_feature_accordion_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_fieldable_panels_pane__gsb_accordion';
+  $strongarm->name = 'field_bundle_settings_fieldable_panels_pane__accordion';
   $strongarm->value = array(
     'view_modes' => array(
       'ical' => array(
@@ -42,7 +42,7 @@ function gsb_feature_accordion_strongarm() {
       ),
     ),
   );
-  $export['field_bundle_settings_fieldable_panels_pane__gsb_accordion'] = $strongarm;
+  $export['field_bundle_settings_fieldable_panels_pane__accordion'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

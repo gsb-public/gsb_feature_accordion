@@ -174,8 +174,8 @@ function gsb_feature_accordion_field_default_fields() {
     ),
   );
 
-  // Exported field: 'fieldable_panels_pane-gsb_accordion-field_accordion_item'.
-  $fields['fieldable_panels_pane-gsb_accordion-field_accordion_item'] = array(
+  // Exported field: 'fieldable_panels_pane-accordion-field_accordion_item'.
+  $fields['fieldable_panels_pane-accordion-field_accordion_item'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -194,7 +194,7 @@ function gsb_feature_accordion_field_default_fields() {
       'type' => 'field_collection',
     ),
     'field_instance' => array(
-      'bundle' => 'gsb_accordion',
+      'bundle' => 'accordion',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
