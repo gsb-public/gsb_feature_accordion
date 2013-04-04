@@ -44,13 +44,11 @@ function gsb_feature_accordion_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(
-            'conditions' => array(),
-          ),
+          'settings' => array(),
           'type' => 'text_default',
-          'weight' => 3,
+          'weight' => '1',
         ),
         'ical' => array(
           'label' => 'above',
@@ -130,13 +128,11 @@ function gsb_feature_accordion_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(
-            'conditions' => array(),
-          ),
+          'settings' => array(),
           'type' => 'text_default',
-          'weight' => 2,
+          'weight' => '0',
         ),
         'ical' => array(
           'label' => 'above',
@@ -207,7 +203,6 @@ function gsb_feature_accordion_field_default_fields() {
           'label' => 'hidden',
           'module' => 'field_collection',
           'settings' => array(
-            'conditions' => array(),
             'view_mode' => 'full',
           ),
           'type' => 'field_collection_fields',
