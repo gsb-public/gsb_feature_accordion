@@ -59,9 +59,6 @@ function gsb_feature_accordion_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
-      'tiny' => array(
-        'custom_settings' => TRUE,
-      ),
     ),
     'extra_fields' => array(
       'form' => array(),
