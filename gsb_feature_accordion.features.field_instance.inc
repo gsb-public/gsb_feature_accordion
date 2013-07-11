@@ -149,7 +149,7 @@ function gsb_feature_accordion_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'ical' => array(
         'label' => 'above',

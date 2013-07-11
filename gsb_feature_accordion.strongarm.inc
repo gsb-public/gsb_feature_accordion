@@ -25,6 +25,15 @@ function gsb_feature_accordion_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'megamenu' => array(
+        'custom_settings' => FALSE,
+      ),
+      'people_fpp' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -35,8 +44,8 @@ function gsb_feature_accordion_strongarm() {
       'display' => array(
         'title' => array(
           'default' => array(
-            'weight' => '-5',
-            'visible' => FALSE,
+            'weight' => '0',
+            'visible' => TRUE,
           ),
         ),
       ),
