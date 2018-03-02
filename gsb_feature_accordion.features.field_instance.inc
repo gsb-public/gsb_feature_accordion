@@ -10,7 +10,8 @@
 function gsb_feature_accordion_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'field_collection_item-field_accordion_item-field_body'
+  // Exported field_instance:
+  // 'field_collection_item-field_accordion_item-field_body'.
   $field_instances['field_collection_item-field_accordion_item-field_body'] = array(
     'bundle' => 'field_accordion_item',
     'custom_add_another' => '',
@@ -108,7 +109,8 @@ function gsb_feature_accordion_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'field_collection_item-field_accordion_item-field_title'
+  // Exported field_instance:
+  // 'field_collection_item-field_accordion_item-field_title'.
   $field_instances['field_collection_item-field_accordion_item-field_title'] = array(
     'bundle' => 'field_accordion_item',
     'default_value' => NULL,
@@ -171,7 +173,8 @@ function gsb_feature_accordion_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'fieldable_panels_pane-accordion-field_accordion_item'
+  // Exported field_instance:
+  // 'fieldable_panels_pane-accordion-field_accordion_item'.
   $field_instances['fieldable_panels_pane-accordion-field_accordion_item'] = array(
     'bundle' => 'accordion',
     'default_value' => NULL,
